@@ -55,7 +55,7 @@ export function Process() {
         <div className="relative mt-20">
           <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-gradient-to-b from-orange-400/50 to-orange-600/50 hidden lg:block" />
 
-          <div className="space-y-16 lg:space-y-28">
+          <div className="space-y-14 lg:space-y-14">
             {processes.map((process, index) => (
               <motion.div
                 key={process.title}

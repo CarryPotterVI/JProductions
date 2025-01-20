@@ -8,23 +8,23 @@ const testimonials = [
   {
     name: "Sarah Schmidt",
     role: "Marketing Direktorin",
-    company: "TechStart GmbH",
+    // company: "TechStart GmbH",
     content: "Jack hat unsere veraltete Website in eine moderne, responsive Plattform verwandelt. Seine Aufmerksamkeit für Details und das Verständnis unserer Bedürfnisse war außergewöhnlich.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&auto=format&fit=crop&q=80"
+    image: "images/sarah.png"
   },
   {
     name: "Michael Weber",
     role: "Gründer",
-    company: "Digital Solutions",
+    // company: "Digital Solutions",
     content: "Die Zusammenarbeit mit Jack war ein Vergnügen. Er hat nicht nur eine schöne Website geliefert, sondern auch wertvolle Einblicke zur Verbesserung unserer Benutzerfreundlichkeit gegeben.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&auto=format&fit=crop&q=80"
+    image: "images/michael.png"
   },
   {
     name: "Anna Müller",
     role: "E-Commerce Managerin",
-    company: "Nordic Style",
-    content: "Die Liebe zum Detail und der saubere Code haben uns beeindruckt. Jacks Expertise in React und Next.js hat uns geholfen, unsere Vision perfekt umzusetzen.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&auto=format&fit=crop&q=80"
+    // company: "Nordic Style",
+    content: "Die Liebe zum Detail und der saubere Code haben uns beeindruckt. Jacks Expertise in React und Next.js hat uns geholfen, unsere Vision perfekt umzusetzen und unser Projekt auf ein neues Level zu heben.",
+    image: "images/anna.png"
   }
 ];
 
@@ -66,7 +66,7 @@ export function Testimonials() {
                 <div>
                   <h4 className="font-semibold">{testimonial.name}</h4>
                   <p className="text-sm text-muted-foreground">
-                    {testimonial.role} bei {testimonial.company}
+                    {testimonial.role} {testimonial.company}
                   </p>
                 </div>
               </div>

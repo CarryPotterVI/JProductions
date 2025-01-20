@@ -38,7 +38,7 @@ const socialLinks = [
   },
   {
     icon: Twitter,
-    href: "https://x.com/jpo_rd",
+    href: "#",
     label: "Twitter",
   },
   {
@@ -65,7 +65,7 @@ export function Contact() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formspree.io/f/xpzvgkrw', {
+      const response = await fetch('https://formspree.io/f/xjkknrew', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

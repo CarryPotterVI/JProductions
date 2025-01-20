@@ -9,23 +9,23 @@ const projects = [
     title: "Auto Werkstatt Website",
     description: "Eine moderne One-Page Website für eine Autowerkstatt mit übersichtlichem Design, Serviceliste und Kontaktintegration. Entwickelt mit responsivem Design und für lokale SEO optimiert.",
     category: "ONE-PAGER",
-    image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2942&auto=format&fit=crop",
+    image: "images/tetik.png",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    link: "#"
+    link: "https://auto-tetik-kiel.de/"
   },
   {
     title: "B2B Shop Plattform",
     description: "Mitwirkung an der Entwicklung und Verbesserung der B2B-Shop-Plattform von Bartels & Langness. Implementierung neuer Funktionen, Optimierung des Einkaufserlebnisses und Wartung des Codes mit Shopware 5.",
     category: "E-COMMERCE",
-    image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=2940&auto=format&fit=crop",
+    image: "images/b2bshop.png",
     technologies: ["PHP", "Shopware 5", "Twig", "jQuery"],
-    link: "#"
+    link: "https://kunden.bela.de/portal/index.html"
   },
   {
     title: "Diverse Kollaborationen",
     description: "Beteiligung an mehreren Entwicklungsprojekten, Beitrag zu Frontend-Implementierungen, Fehlerbehebungen und Funktionserweiterungen auf verschiedenen Plattformen.",
     category: "ENTWICKLUNG",
-    image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2670&auto=format&fit=crop",
+    image: "images/concept.png",
     technologies: ["JavaScript", "React", "Node.js"],
     link: "#"
   }

@@ -34,7 +34,7 @@ export function Hero() {
             className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] rounded-full overflow-hidden border-4 border-orange-500/20 my-8 lg:hidden"
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+              src="/images/JackProfile.jpg"
               alt="Profile picture"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -135,7 +135,7 @@ export function Hero() {
           className="relative hidden lg:block flex-1 aspect-square w-full max-w-[400px] rounded-full overflow-hidden border-4 border-orange-500/20"
         >
           <Image
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+            src="\images\JackProfile.jpg"
             alt="Profile picture"
             fill
             className="object-cover hover:scale-105 transition-transform duration-300"
