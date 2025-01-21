@@ -39,7 +39,7 @@ export function Hero() {
             className="text-center lg:text-left"
           >
             <h1 className="text-3xl font-bold sm:text-5xl lg:text-6xl inline-flex flex-wrap justify-center lg:justify-start gap-x-4">
-              <span>Hallo, ich bin</span>
+              <span>Hi, ich bin</span>
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Jack
               </span>
@@ -57,7 +57,7 @@ export function Hero() {
             className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] rounded-full overflow-hidden border-4 border-orange-500/20 my-8 lg:hidden"
           >
             <Image
-              src="/images/JackProfile.jpg"
+              src="/images/studio2.jpg"
               alt="Profile picture"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -169,7 +169,7 @@ export function Hero() {
           className="relative hidden lg:block flex-1 aspect-square w-full max-w-[400px] rounded-full overflow-hidden border-4 border-orange-500/20"
         >
           <Image
-             src="\images\JackProfile.jpg"
+             src="\images\studio2.jpg"
             alt="Profile picture"
             fill
             className="object-cover hover:scale-105 transition-transform duration-300"
