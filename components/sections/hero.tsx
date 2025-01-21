@@ -38,15 +38,15 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center lg:text-left"
           >
-            <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium rounded-full bg-orange-500/10 text-orange-500">
-              Frontend Entwickler
-            </span>
             <h1 className="text-3xl font-bold sm:text-5xl lg:text-6xl inline-flex flex-wrap justify-center lg:justify-start gap-x-4">
               <span>Hallo, ich bin</span>
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Jack
               </span>
             </h1>
+              {/* <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium rounded-full bg-orange-500/10 text-orange-500">
+                Frontend Entwickler
+              </span> */}
           </motion.div>
 
           {/* Profile Image (Mobile Only) */}
