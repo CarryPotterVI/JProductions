@@ -31,7 +31,7 @@ export function Hero() {
   return (
     <section className="container max-w-6xl mx-auto min-h-[100svh] flex flex-col items-center justify-center px-4 py-16 lg:py-0">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full">
-        <div className="flex-1 flex flex-col items-center lg:items-start">
+        <div className="flex-1 flex flex-col items-center lg:items-start mt-8">
           {/* Greeting */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
