@@ -26,15 +26,15 @@ const formSchema = z.object({
 });
 
 const socialLinks = [
+    {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/jackpolanco-v",
+    label: "LinkedIn",
+  },
   {
     icon: Github,
     href: "https://github.com/CarryPotterVI",
     label: "GitHub",
-  },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/jackpolanco-v",
-    label: "LinkedIn",
   },
   {
     icon: Twitter,
@@ -89,12 +89,7 @@ export function Contact() {
 
   return (
     <section className="container relative min-h-screen py-24 px-6 sm:px-8">
-      <div className="fixed inset-0 bg-gradient-to-br from-orange-400/5 via-background to-orange-600/5 -z-10" />
-      
-      <div className="fixed inset-0 opacity-30 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-400/20 via-transparent to-orange-600/20 animate-pulse" />
-        <div className="absolute inset-0 bg-gradient-to-tl from-orange-400/10 via-transparent to-orange-600/10 animate-pulse delay-700" />
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-400/5 via-background to-orange-600/5 -z-10" />
 
       <div className="mx-auto max-w-3xl relative">
         <div className="text-center mb-16">
@@ -128,7 +123,7 @@ export function Contact() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="relative space-y-8 rounded-2xl bg-background/40 backdrop-blur-md p-8 lg:p-10 shadow-[0_0_15px_rgba(249,115,22,0.1)] border border-orange-500/20 
+            className="relative space-y-8 rounded-2xl bg-background/40 p-8 lg:p-10 shadow-lg border border-orange-500/20 backdrop-blur-sm
                      before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gradient-to-br before:from-orange-400/10 before:to-orange-600/10 before:opacity-50"
           >
             <FormField
@@ -141,7 +136,7 @@ export function Contact() {
                     <Input 
                       placeholder="Max Mustermann" 
                       {...field}
-                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
+                      className="bg-background/50 border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
                     />
                   </FormControl>
                   <FormMessage />
@@ -158,7 +153,7 @@ export function Contact() {
                     <Input 
                       placeholder="max@beispiel.de" 
                       {...field}
-                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
+                      className="bg-background/50 border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
                     />
                   </FormControl>
                   <FormMessage />
@@ -174,7 +169,7 @@ export function Contact() {
                   <FormControl>
                     <Textarea
                       placeholder="Ihre Nachricht hier..."
-                      className="min-h-[160px] bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base"
+                      className="min-h-[160px] bg-background/50 border-orange-500/20 focus:border-orange-500/40 transition-colors text-base"
                       {...field}
                     />
                   </FormControl>
