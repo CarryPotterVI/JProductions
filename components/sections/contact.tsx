@@ -88,7 +88,7 @@ export function Contact() {
   }
 
   return (
-    <section className="container relative min-h-screen py-24">
+    <section className="container relative min-h-screen py-24 px-6 sm:px-8">
       <div className="fixed inset-0 bg-gradient-to-br from-orange-400/5 via-background to-orange-600/5 -z-10" />
       
       <div className="fixed inset-0 opacity-30 -z-10">
@@ -97,21 +97,21 @@ export function Contact() {
       </div>
 
       <div className="mx-auto max-w-3xl relative">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 uppercase tracking-wider">{t('contact.title')}</h2>
-          <p className="text-muted-foreground">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-6 uppercase tracking-wider">{t('contact.title')}</h2>
+          <p className="text-muted-foreground text-lg">
             {t('contact.subtitle')}
           </p>
         </div>
         
-        <div className="mb-12 flex justify-center gap-6">
+        <div className="mb-16 flex justify-center gap-8">
           {socialLinks.map((link) => (
             <Button
               key={link.label}
               variant="ghost"
               size="icon"
               asChild
-              className="h-12 w-12 rounded-full hover:bg-orange-500/10 hover:text-orange-500 transition-colors duration-300"
+              className="h-14 w-14 rounded-full hover:bg-orange-500/10 hover:text-orange-500 transition-colors duration-300"
             >
               <a
                 href={link.href}
@@ -119,7 +119,7 @@ export function Contact() {
                 rel="noopener noreferrer"
                 aria-label={link.label}
               >
-                <link.icon className="h-6 w-6" />
+                <link.icon className="h-7 w-7" />
               </a>
             </Button>
           ))}
@@ -128,20 +128,20 @@ export function Contact() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="relative space-y-8 rounded-xl bg-background/40 backdrop-blur-md p-8 shadow-[0_0_15px_rgba(249,115,22,0.1)] border border-orange-500/20 
-                     before:absolute before:inset-0 before:-z-10 before:rounded-xl before:bg-gradient-to-br before:from-orange-400/10 before:to-orange-600/10 before:opacity-50"
+            className="relative space-y-8 rounded-2xl bg-background/40 backdrop-blur-md p-8 lg:p-10 shadow-[0_0_15px_rgba(249,115,22,0.1)] border border-orange-500/20 
+                     before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gradient-to-br before:from-orange-400/10 before:to-orange-600/10 before:opacity-50"
           >
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel className="text-base">Name</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="Max Mustermann" 
                       {...field}
-                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors"
+                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
                     />
                   </FormControl>
                   <FormMessage />
@@ -153,12 +153,12 @@ export function Contact() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>E-Mail</FormLabel>
+                  <FormLabel className="text-base">E-Mail</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="max@beispiel.de" 
                       {...field}
-                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors"
+                      className="bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base py-6"
                     />
                   </FormControl>
                   <FormMessage />
@@ -170,11 +170,11 @@ export function Contact() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nachricht</FormLabel>
+                  <FormLabel className="text-base">Nachricht</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Ihre Nachricht hier..."
-                      className="min-h-[120px] bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors"
+                      className="min-h-[160px] bg-background/50 backdrop-blur-sm border-orange-500/20 focus:border-orange-500/40 transition-colors text-base"
                       {...field}
                     />
                   </FormControl>
@@ -185,7 +185,7 @@ export function Contact() {
             <Button 
               type="submit" 
               disabled={isSubmitting}
-              className="w-full bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base py-6"
             >
               {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
             </Button>

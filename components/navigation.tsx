@@ -13,7 +13,7 @@ const menuItems = [
     href: "/services", 
     label: "LEISTUNGEN",
     subItems: [
-      { href: "services", label: "Unsere Leistungen" },
+      { href: "services", label: "Meine Leistungen" },
       { href: "process", label: "Entwicklungsprozess" },
       { href: "pricing", label: "Preise" },
     ]

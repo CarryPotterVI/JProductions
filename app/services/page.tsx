@@ -9,8 +9,8 @@ export default function Services() {
       <section id="services" className="relative min-h-[50vh] overflow-hidden py-24">
         <div className="fixed inset-0 bg-gradient-to-br from-orange-400/30 via-background/50 to-orange-600/30" />
         
-        <div className="container max-w-6xl mx-auto relative">
-          <h1 className="mb-16 text-center text-4xl font-bold uppercase tracking-wider">Unsere Leistungen</h1>
+        <div className="container max-w-6xl mx-auto px-6 sm:px-8 relative">
+          <h1 className="mb-16 text-center text-4xl font-bold uppercase tracking-wider">Meine Leistungen</h1>
           <ServicesGrid />
         </div>
       </section>
